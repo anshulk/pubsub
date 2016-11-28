@@ -9,16 +9,16 @@ Also included is a simple frontend page built using [angular](angularjs.org) and
 
 Running it -
 
->   Clone from github
+>   1. Clone from github
 
->   `npm install`
+>   2. `npm install`
 
->   Enable mysql bin log as given [here](https://github.com/numtel/mysql-live-select#installation)
+>   3 . Enable mysql bin log as given [here](https://github.com/numtel/mysql-live-select#installation)
 
->   Use `pubsub.sql` to intitalize mysql db
+>   4 .  Use `pubsub.sql` to intitalize mysql db, edit settings in
 
->   `npm start`
+>   5 . `npm start`
 
->   Go to [localhost:3000](localhost:3000) (or the port in your ENV)
+>   6 Go to [localhost:3000](localhost:3000) (or the port in your ENV)
 
 Any changes in the table are reflected real time on the frontend.
