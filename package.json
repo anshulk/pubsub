@@ -1,0 +1,20 @@
+{
+  "name": "pubsub",
+  "version": "1.0.0",
+  "description": "live sync with mysql db",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https:github.com/anshulk/pubsub"
+  },
+  "author": "anshulk",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mysql-live-select": "^1.0.6",
+    "socket.io": "^1.7.0"
+  }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PubSub</title>
+</head>
+<body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular.min.js"></script>
+<script src="/pubsub.js"></script>
+<link rel="stylesheet" type="text/css" href="normalize.css">
+<link rel="stylesheet" type="text/css" href="skeleton.css">
+<div class="container" ng-app="pubSub" ng-controller="pubSubController">
+    <div class="row">
+        <div style="text-align: center"><h3>Players</h3></div>
+    </div>
+    <div class="row">
+        <table class="eleven columns offset-by-one table">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Score</th>
+                <th>Country</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="(index,player) in players">
+                <td>{{player.id}}</td>
+                <td>{{player.name}}</td>
+                <td>{{player.score}}</td>
+                <td>{{player.country}}</td>
+            </tr>
+            </tbody>
+    </div>
+</div>
+</body>
+</html>
